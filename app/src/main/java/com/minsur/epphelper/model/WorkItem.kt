@@ -77,35 +77,32 @@ val workIds: Map<Int,String> = mapOf(
     61 to "MEDICIONES DE POZAS A TIERRA",
     62 to "TRABAJO EN CAMPO, INSPECCIONES",
     63 to "TRABAJOS EN CAMPO, INSPECCIONES PLANTA",
-    64 to "TRABAJO EN CAMPO, INSPECCIONES",
-    65 to "TRABAJOS EN CAMPO, INSPECCIONES PLANTA",
-    66 to "MANTENIMIENTO DE BOMBAS",
-    67 to "MANTENIMIENTO DE FAJAS TRANSFORMADORAS",
-    68 to "INSTALACION DE TUBERIAS",
-    69 to "LUBRICACION DE EQUIPOS",
-    70 to "REPARACION DE BOMBAS",
-    71 to "TRABAJOS EN ALTURA",
-    72 to "PRUEBAS Y EVALUACION DE EQUIPO (ARRANQUE)",
-    73 to "CAMBIOS DE ACEITE",
-    74 to "CAMBIOS DE FAJAS DE VENTILADOR",
-    75 to "CAMBIO DE PUNTAS DE CUCHARON DE CARGADOR",
-    76 to "LAVADO DE COMPONENTES (SOLVENTES)",
-    77 to "LAVADO DE EQUIPOS",
-    78 to "CAMBIOS DE TOLVA DE MOTOR",
-    79 to "CAMBIO DE MANGUERA HIDRAULICA",
-    80 to "SOLDADURA TRUCKSHOP",
-    81 to "SOLDADURA PLANTA ADR",
-    82 to "INSPECCION PLANTA ADR",
-    83 to "INSPECCION CHANCADO",
-    84 to "OPERADOR DE CAMION CISTERNA DE COMBUSTIBLE",
-    85 to "OPERADOR DE CAMION CISTERNA DE AGUA",
-    86 to "OPERADOR DE TRACTOR ORUGA",
-    87 to "OPERADOR DE PERFORADORA",
-    88 to "OPERADOR DE EXCAVADORA",
-    89 to "OPERADOR DE RODILLO",
-    90 to "OPERADOR DE CARGADOR FRONTAL",
-    91 to "OPERADOR DE TRACTOR NEUMATICO",
-    92 to "OPERADOR DE CAMION"
+    64 to "MANTENIMIENTO DE BOMBAS",
+    65 to "MANTENIMIENTO DE FAJAS TRANSFORMADORAS",
+    66 to "INSTALACION DE TUBERIAS",
+    67 to "LUBRICACION DE EQUIPOS",
+    68 to "REPARACION DE BOMBAS",
+    69 to "PRUEBAS Y EVALUACION DE EQUIPO (ARRANQUE)",
+    70 to "CAMBIOS DE ACEITE",
+    71 to "CAMBIOS DE FAJAS DE VENTILADOR",
+    72 to "CAMBIO DE PUNTAS DE CUCHARON DE CARGADOR",
+    73 to "LAVADO DE COMPONENTES (SOLVENTES)",
+    74 to "LAVADO DE EQUIPOS",
+    75 to "CAMBIOS DE TOLVA DE MOTOR",
+    76 to "CAMBIO DE MANGUERA HIDRAULICA",
+    77 to "SOLDADURA TRUCKSHOP",
+    78 to "SOLDADURA PLANTA ADR",
+    79 to "INSPECCION PLANTA ADR",
+    80 to "INSPECCION CHANCADO",
+    81 to "OPERADOR DE CAMION CISTERNA DE COMBUSTIBLE",
+    82 to "OPERADOR DE CAMION CISTERNA DE AGUA",
+    83 to "OPERADOR DE TRACTOR ORUGA",
+    84 to "OPERADOR DE PERFORADORA",
+    85 to "OPERADOR DE EXCAVADORA",
+    86 to "OPERADOR DE RODILLO",
+    87 to "OPERADOR DE CARGADOR FRONTAL",
+    88 to "OPERADOR DE TRACTOR NEUMATICO",
+    89 to "OPERADOR DE CAMION"
 )
 
 val subAreaJobWork: Map<Int, Map<Int, List<Int>>> = mapOf(
@@ -156,19 +153,19 @@ val subAreaJobWork: Map<Int, Map<Int, List<Int>>> = mapOf(
         9 to listOf<Int>(53, 54),
         8 to listOf<Int>(55, 56, 57),
         5 to listOf<Int>(58, 59, 60, 61),
-        7 to listOf<Int>(64, 65)
+        7 to listOf<Int>(62, 63)
     ),
     9 to mapOf<Int, List<Int>>(
-        11 to listOf<Int>(66, 67, 68, 69, 70, 71),
-        12 to listOf<Int>(72, 73, 74, 75, 76, 77, 78, 79),
-        6 to listOf<Int>(80, 81),
-        7 to listOf<Int>(82, 33)
+        11 to listOf<Int>(64, 65, 66, 67, 68, 52),
+        12 to listOf<Int>(69, 70, 71, 72, 73, 74, 75, 76),
+        6 to listOf<Int>(77, 78),
+        7 to listOf<Int>(79, 33)
     ),
     10 to mapOf<Int, List<Int>>(
-        14 to listOf<Int>(82, 83)
+        14 to listOf<Int>(79, 80)
     ),
     5 to mapOf<Int, List<Int>>(
-        4 to listOf<Int>(84, 85, 86, 87, 88, 89, 90, 91, 92,),
+        4 to listOf<Int>(81, 82, 83, 84, 85, 86, 87, 88, 89),
         7 to listOf<Int>(33)
     )
 )
