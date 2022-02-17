@@ -31,7 +31,7 @@ val areaImages: Map<Int,Int> = mapOf(
     5 to R.drawable.exploraciones,
     6 to R.drawable.geologia,
     7 to R.drawable.logistica,
-    8 to  R.drawable.planeamiento,
+    8 to R.drawable.planeamiento,
     9 to R.drawable.sso
 )
 

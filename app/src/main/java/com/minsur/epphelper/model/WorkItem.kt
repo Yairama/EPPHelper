@@ -181,3 +181,12 @@ fun getWorksPerAreaSubAreaJob( areaId: Int, subAreaId: Int, jobId: Int) = subAre
         image = R.drawable.napoleon
     )
 }
+
+fun getSpecificWork( areaId: Int, subAreaId: Int, jobId: Int, workId: Int ) = WorkItem(
+    id = workId,
+    jobId = jobId,
+    subAreaId = subAreaId,
+    areaId = areaId,
+    title = workIds[workId]!!,
+    image = R.drawable.napoleon
+)

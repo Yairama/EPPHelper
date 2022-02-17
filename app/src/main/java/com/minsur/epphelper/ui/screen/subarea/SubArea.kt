@@ -40,7 +40,8 @@ fun SubAreaScreen(areaId: Int, onSubAreaClick:(AreaItem,SubAreaItem) -> Unit, on
             LazyColumn(){
                 items(getSubAreasPerArea(areaItem.id)) { subAreaItem->
                     Card(
-                        modifier = Modifier.clickable(onClick = {onSubAreaClick( areaItem, subAreaItem)}),
+                        modifier = Modifier.clickable(onClick = {onSubAreaClick( areaItem, subAreaItem)})
+                            .fillMaxWidth(),
                         elevation = 0.dp,
                         border = BorderStroke(1.dp, Color.LightGray)
                     ) {

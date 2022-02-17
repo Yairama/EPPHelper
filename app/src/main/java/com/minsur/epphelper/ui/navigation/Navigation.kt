@@ -9,6 +9,7 @@ import androidx.navigation.compose.rememberNavController
 import com.minsur.epphelper.model.areaIds
 import com.minsur.epphelper.ui.screen.job.JobScreen
 import com.minsur.epphelper.ui.screen.main.MainScreen
+import com.minsur.epphelper.ui.screen.required.RequiredScreen
 import com.minsur.epphelper.ui.screen.subarea.SubAreaScreen
 import com.minsur.epphelper.ui.screen.work.WorkScreen
 
@@ -58,8 +59,26 @@ fun Navigation() {
                 subAreaId = backStackEntry.findArg(NavArg.SubAreaId),
                 jobId = backStackEntry.findArg(NavArg.JobId),
                 onUpClick = {navController.popBackStack()},
+                onWorkClick = { areaItem, subAreaItem, jobItem, workItem ->
+                    navController.navigate(NavItem.Required.createNavRoute(
+                        areaId = areaItem.id ,
+                        subAreaId = subAreaItem.id,
+                        jobId = jobItem.id,
+                        workId = workItem.id)
+                    )
+                }
             )
 
+        }
+
+        composable(NavItem.Required){ backStackEntry ->
+            RequiredScreen(
+                areaId = backStackEntry.findArg(NavArg.AreaId),
+                subAreaId = backStackEntry.findArg(NavArg.SubAreaId),
+                jobId = backStackEntry.findArg(NavArg.JobId),
+                workId = backStackEntry.findArg(NavArg.WorkId),
+                onUpClick = {navController.popBackStack()}
+            )
         }
 
     }

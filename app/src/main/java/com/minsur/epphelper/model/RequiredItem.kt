@@ -804,3 +804,9 @@ val requiredItems: List<RequiredItem> = listOf(
         EPPIds = listOf(1,5,6,10,13,14,16,24,42,49,52,62,73,84,85,107)
     ),
 )
+
+
+fun getEppList(areaId: Int, subAreaId: Int, jobId: Int, workId: Int) =
+    requiredItems.first { it ->
+        it.areaId == areaId && it.subAreaId == subAreaId && it.jobId == jobId && it.workId == workId
+    }.EPPIds

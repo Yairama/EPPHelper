@@ -26,7 +26,7 @@ import com.minsur.epphelper.ui.shared.WorkImageThumb
 
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
-fun WorkScreen(areaId: Int ,subAreaId: Int, jobId: Int, onUpClick: ()->Unit, modifier: Modifier=Modifier){
+fun WorkScreen(areaId: Int ,subAreaId: Int, jobId: Int, onUpClick: ()->Unit,onWorkClick:(AreaItem, SubAreaItem, JobItem, WorkItem) -> Unit, modifier: Modifier=Modifier){
 
     val jobItem : JobItem = remember {
         getSpecificJob(
@@ -65,7 +65,7 @@ fun WorkScreen(areaId: Int ,subAreaId: Int, jobId: Int, onUpClick: ()->Unit, mod
             items(getWorksPerAreaSubAreaJob(areaId = areaId ,subAreaId = subAreaId, jobId = jobId)) { item ->
                 WorkListItem(
                     item = item,
-                    onClick = { /**TODO**/},
+                    onClick = { onWorkClick(areaItem,subAreaItem,jobItem,item) },
                     modifier = Modifier.padding(dimensionResource(id = R.dimen.padding_medium))
                 )
             }
