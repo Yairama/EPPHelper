@@ -122,12 +122,16 @@ fun RequiredScreen(areaId: Int, subAreaId: Int, jobId: Int, workId: Int, onUpCli
 @Composable
 fun Alert(showDialog: MutableState<Boolean>, checkList: SnapshotStateMap<Int, Boolean>, areaId: Int,
           subAreaId: Int, jobId: Int, workId: Int, onCheckListSent: ()->Unit) {
+    val trueItems = remember {
+        mutableStateOf(checkList.values.toList().count { it })
+    }
+    val totalItems = checkList.keys.size
     AlertDialog(
         title = {
             Text(text = "¿ESTA SEGURO DE QUE QUIERE COMPLETAR EL CHECK LIST?")
         },
         text = {
-            Text("Sus respuestas serán enviadas")
+            Text("Usted tiene ${trueItems.value} de ${totalItems} EPPs")
         },
         onDismissRequest = {
 
