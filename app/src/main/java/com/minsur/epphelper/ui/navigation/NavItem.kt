@@ -20,6 +20,8 @@ sealed class NavItem (
         navArgument(it.key){type = it.navType}
     }
 
+
+    object Login: NavItem("login")
     object Main: NavItem("main")
     object SubArea: NavItem("subarea", listOf(NavArg.AreaId)){
         fun createNavRoute(areaId: Int) = "$baseRoute/$areaId"

@@ -8,6 +8,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.minsur.epphelper.model.areaIds
 import com.minsur.epphelper.ui.screen.job.JobScreen
+import com.minsur.epphelper.ui.screen.login.LoginScreen
 import com.minsur.epphelper.ui.screen.main.MainScreen
 import com.minsur.epphelper.ui.screen.required.RequiredScreen
 import com.minsur.epphelper.ui.screen.subarea.SubAreaScreen
@@ -18,12 +19,14 @@ fun Navigation() {
     val navController = rememberNavController()
     NavHost(
         navController = navController,
-        startDestination = NavItem.Main.route
+        startDestination = NavItem.Login.route
     ) {
+
+        composable(NavItem.Login){
+            LoginScreen(onLoginSuccess = {navController.navigate(NavItem.Main.route)})
+        }
+
         composable(NavItem.Main) {
-//            MainScreen{ areaItem ->
-//                navController.navigate(NavItem.SubArea.createNavRoute(areaItem.id))
-//            }
             MainScreen(onAreaClick = { areaItem -> navController.navigate(NavItem.SubArea.createNavRoute(areaItem.id))})
         }
         composable(NavItem.SubArea) { backStackEntry ->
