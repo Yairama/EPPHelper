@@ -23,8 +23,8 @@ var mainUser: User? = null
 fun getUser(dni: String, then: ((User?) -> Unit)){
     val request = Request.Builder()
         .url("http://20.197.190.239:8000/api/users/$dni")
+        //.url("http://10.0.2.2:8000/api/users/$dni")
         .build()
-    var content:String? = null
 
     client.newCall(request).enqueue(object : Callback {
         override fun onFailure(call: Call, e: IOException) {
@@ -53,7 +53,5 @@ fun getUser(dni: String, then: ((User?) -> Unit)){
         }
 
     })
-
-
 
 }

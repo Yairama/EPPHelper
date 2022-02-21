@@ -13,7 +13,7 @@ data class WorkItem(
 )
 
 val workIds: Map<Int,String> = mapOf(
-    0 to "INSPECCION",
+    90 to "INSPECCION",
     1 to "PREPARACION DE LECHADA DE CAL",
     2 to "OPERACION DE CHANCADO Y RECLAMO DE MINERAL",
     3 to "LIMPIEZA DE CHANCADO Y RECLAMO DE MINERAL POR MANTENIMIENTO O PARADA INTEMPESTIVA",
@@ -106,8 +106,8 @@ val workIds: Map<Int,String> = mapOf(
 )
 
 val subAreaJobWork: Map<Int, Map<Int, List<Int>>> = mapOf(
-    0 to mapOf<Int, List<Int>>(
-        4 to listOf<Int>(0, 1)
+    16 to mapOf<Int, List<Int>>(
+        4 to listOf<Int>(90, 1)
     ),
     1 to mapOf<Int, List<Int>>(
         4 to listOf<Int>(2, 3)

@@ -10,7 +10,7 @@ data class EPPItem(
 )
 
 val EPPIds: Map<Int, String> = mapOf(
-    0 to "Casco Naranja Jockey  - Vgard MSA",
+    108 to "Casco Naranja Jockey  - Vgard MSA",
     1 to "Casco Blanco Jockey  - Vgard MSA",
     2 to "Casco Azul Jockey  - Vgard MSA",
     3 to "Cortaviento",
@@ -121,7 +121,7 @@ val EPPIds: Map<Int, String> = mapOf(
 )
 
 val EPPImages: Map<Int,Int> = mapOf(
-    0 to R.drawable.casco_naranja_jockey_vgard_msa,
+    108 to R.drawable.casco_naranja_jockey_vgard_msa,
     1 to R.drawable.casco_blanco_jockey_vgard_msa,
     2 to R.drawable.casco_azul_jockey_vgard_msa,
     3 to R.drawable.cortaviento,

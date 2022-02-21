@@ -10,7 +10,7 @@ data class AreaItem(
 )
 
 val areaIds : Map<Int,String> = mapOf(
-    0 to "PLANTA",
+    10 to "PLANTA",
     1 to "MINA",
     2 to "MEDIO AMBIENTE",
     3 to "RECURSOS HUMANOS",
@@ -23,7 +23,7 @@ val areaIds : Map<Int,String> = mapOf(
 )
 
 val areaImages: Map<Int,Int> = mapOf(
-    0 to R.drawable.planta,
+    10 to R.drawable.planta,
     1 to R.drawable.mina,
     2 to R.drawable.medio_ambiente,
     3 to R.drawable.rrhh,

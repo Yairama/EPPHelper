@@ -80,7 +80,8 @@ fun Navigation() {
                 subAreaId = backStackEntry.findArg(NavArg.SubAreaId),
                 jobId = backStackEntry.findArg(NavArg.JobId),
                 workId = backStackEntry.findArg(NavArg.WorkId),
-                onUpClick = {navController.popBackStack()}
+                onUpClick = {navController.popBackStack()},
+                onCheckListSent = {navController.navigate(NavItem.Main.route)}
             )
         }
 

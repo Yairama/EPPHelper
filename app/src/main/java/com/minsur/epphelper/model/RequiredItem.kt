@@ -12,23 +12,23 @@ val requiredItems: List<RequiredItem> = listOf(
 
     //Inspección
     RequiredItem(
-        areaId = 0,
-        subAreaId = 0,
+        areaId = 10,
+        subAreaId = 16,
         jobId = 4,
-        workId = 0,
+        workId = 90,
         EPPIds = listOf(2,3,4,5,6,9,10,13,14,15,20,21,22,23,24,26,61,64,66,72,84,85,86,107),
     ),
     //Preparación de lechada de cal
     RequiredItem(
-        areaId = 0,
-        subAreaId = 0,
+        areaId = 10,
+        subAreaId = 16,
         jobId = 4,
         workId = 1,
         EPPIds = listOf(2,4,5,6,9,13,14,15,20,21,22,23,24,26,28,41,43,44,45,48,52,57,65,72,84,85,86,107),
     ),
     //Operación de Chancado y reclamo de mineral
     RequiredItem(
-        areaId = 0,
+        areaId = 10,
         subAreaId = 1,
         jobId = 4,
         workId = 2,
@@ -36,7 +36,7 @@ val requiredItems: List<RequiredItem> = listOf(
     ),
     //Limpieza de chancado y reclamo de mineral por mantenimiento o parada intempestiva
     RequiredItem(
-        areaId = 0,
+        areaId = 10,
         subAreaId = 1,
         jobId = 4,
         workId = 3,
@@ -44,7 +44,7 @@ val requiredItems: List<RequiredItem> = listOf(
     ),
     //Armado de sistema de riesgo(celdas)
     RequiredItem(
-        areaId = 0,
+        areaId = 10,
         subAreaId = 2,
         jobId = 4,
         workId = 4,
@@ -53,7 +53,7 @@ val requiredItems: List<RequiredItem> = listOf(
     /**TODO: ADD THE EPP IDS IN THE OTHERS REQUIRED ITEMS**/
     //'Monitoreo de flujos
     RequiredItem(
-        areaId = 0,
+        areaId = 10,
         subAreaId = 2,
         jobId = 4,
         workId = 5,
@@ -61,7 +61,7 @@ val requiredItems: List<RequiredItem> = listOf(
     ),
     //'Apilamiento
     RequiredItem(
-        areaId = 0,
+        areaId = 10,
         subAreaId = 2,
         jobId = 4,
         workId = 6,
@@ -69,7 +69,7 @@ val requiredItems: List<RequiredItem> = listOf(
     ),
     //'Tendido de geomenbrana y reparaciones
     RequiredItem(
-        areaId = 0,
+        areaId = 10,
         subAreaId = 2,
         jobId = 4,
         workId = 7,
@@ -77,7 +77,7 @@ val requiredItems: List<RequiredItem> = listOf(
     ),
     //'Empalme de tuberias con soldadura
     RequiredItem(
-        areaId = 0,
+        areaId = 10,
         subAreaId = 2,
         jobId = 4,
         workId = 8,
@@ -85,7 +85,7 @@ val requiredItems: List<RequiredItem> = listOf(
     ),
     //Preparación de solución cianurada
     RequiredItem(
-        areaId = 0,
+        areaId = 10,
         subAreaId = 3,
         jobId = 4,
         workId = 9,
@@ -93,7 +93,7 @@ val requiredItems: List<RequiredItem> = listOf(
     ),
     //Adsorción
     RequiredItem(
-        areaId = 0,
+        areaId = 10,
         subAreaId = 3,
         jobId = 4,
         workId = 10,
@@ -101,7 +101,7 @@ val requiredItems: List<RequiredItem> = listOf(
     ),
     //Desorción
     RequiredItem(
-        areaId = 0,
+        areaId = 10,
         subAreaId = 3,
         jobId = 4,
         workId = 11,
@@ -109,7 +109,7 @@ val requiredItems: List<RequiredItem> = listOf(
     ),
     //Reactivación química
     RequiredItem(
-        areaId = 0,
+        areaId = 10,
         subAreaId = 3,
         jobId = 4,
         workId = 12,
@@ -117,7 +117,7 @@ val requiredItems: List<RequiredItem> = listOf(
     ),
     //Limpieza de tanque Barren
     RequiredItem(
-        areaId = 0,
+        areaId = 10,
         subAreaId = 3,
         jobId = 4,
         workId = 13,
@@ -125,7 +125,7 @@ val requiredItems: List<RequiredItem> = listOf(
     ),
     //Inspección de pozas
     RequiredItem(
-        areaId = 0,
+        areaId = 10,
         subAreaId = 3,
         jobId = 4,
         workId = 14,
@@ -133,7 +133,7 @@ val requiredItems: List<RequiredItem> = listOf(
     ),
     //Lavado, filtrado y retorteo del cemento electrolítico - COSECHA
     RequiredItem(
-        areaId = 0,
+        areaId = 10,
         subAreaId = 4,
         jobId = 4,
         workId = 15,
@@ -141,7 +141,7 @@ val requiredItems: List<RequiredItem> = listOf(
     ),
     //Acondicionamiento y fundición del cemento seco- FUNDICION
     RequiredItem(
-        areaId = 0,
+        areaId = 10,
         subAreaId = 4,
         jobId = 4,
         workId = 16,
@@ -149,7 +149,7 @@ val requiredItems: List<RequiredItem> = listOf(
     ),
     //Almacenaje de barra dore
     RequiredItem(
-        areaId = 0,
+        areaId = 10,
         subAreaId = 4,
         jobId = 4,
         workId = 17,
@@ -157,7 +157,7 @@ val requiredItems: List<RequiredItem> = listOf(
     ),
     //Envío de escoria pobre al PAD
     RequiredItem(
-        areaId = 0,
+        areaId = 10,
         subAreaId = 4,
         jobId = 4,
         workId = 18,
@@ -165,7 +165,7 @@ val requiredItems: List<RequiredItem> = listOf(
     ),
     //Limpieza de Scrubbers
     RequiredItem(
-        areaId = 0,
+        areaId = 10,
         subAreaId = 4,
         jobId = 4,
         workId = 19,
@@ -173,7 +173,7 @@ val requiredItems: List<RequiredItem> = listOf(
     ),
     //Despacho de barra dore
     RequiredItem(
-        areaId = 0,
+        areaId = 10,
         subAreaId = 4,
         jobId = 7,
         workId = 20,
@@ -359,7 +359,7 @@ val requiredItems: List<RequiredItem> = listOf(
     RequiredItem(
         areaId = 7,
         subAreaId = 13,
-        jobId = 0,
+        jobId = 16,
         workId = 41,
         EPPIds = listOf(2,3,4,5,6,13,14,15,20,21,22,23,24,26,42,52,57,58,61,72,74,85,107)
     ),
@@ -367,7 +367,7 @@ val requiredItems: List<RequiredItem> = listOf(
     RequiredItem(
         areaId = 7,
         subAreaId = 13,
-        jobId = 0,
+        jobId = 16,
         workId = 42,
         EPPIds = listOf(2,3,4,5,6,10,13,14,15,20,21,22,23,24,26,28,42,52,57,58,61,72,74,85,95,97,100,107)
     ),
@@ -375,7 +375,7 @@ val requiredItems: List<RequiredItem> = listOf(
     RequiredItem(
         areaId = 7,
         subAreaId = 13,
-        jobId = 0,
+        jobId = 16,
         workId = 43,
         EPPIds = listOf(2,3,4,5,6,13,14,15,20,21,22,23,24,26,42,52,55,57,58,72,87,95,97,100,107)
     ),
@@ -383,7 +383,7 @@ val requiredItems: List<RequiredItem> = listOf(
     RequiredItem(
         areaId = 7,
         subAreaId = 13,
-        jobId = 0,
+        jobId = 16,
         workId = 44,
         EPPIds = listOf(2,3,4,5,6,13,14,15,20,21,22,23,24,26,28,41,42,44,52,53,54,55,58,72,74,107)
     ),

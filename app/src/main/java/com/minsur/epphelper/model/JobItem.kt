@@ -12,7 +12,7 @@ data class JobItem(
 )
 
 val jobImages: Map<Int, Int> = mapOf(
-    0 to R.drawable.auxiliar_de_almacen,
+    16 to R.drawable.auxiliar_de_almacen,
     1 to R.drawable.auxiliar_ssgg,
     2 to R.drawable.auxiliar_ssma,
     3 to R.drawable.ayudante_topografo,
@@ -31,7 +31,7 @@ val jobImages: Map<Int, Int> = mapOf(
 )
 
 val jobIds: Map<Int,String> = mapOf(
-    0 to "AUXILIAR DE ALMACEN",
+    16 to "AUXILIAR DE ALMACEN",
     1 to "AUXILIAR SSGG",
     2 to "AUXILIAR SSMA",
     3 to "AYUDANTE TOPOGRAFO",
@@ -51,7 +51,7 @@ val jobIds: Map<Int,String> = mapOf(
 
 
 val subAreaJobs: Map<Int, List<Int>> = mapOf(
-    0 to listOf<Int>(4),
+    16 to listOf<Int>(4),
     1 to listOf<Int>(4),
     2 to listOf<Int>(4),
     3 to listOf<Int>(4),

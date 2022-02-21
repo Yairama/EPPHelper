@@ -7,7 +7,7 @@ data class SubAreaItem(
 )
 
 val subAreaIds: Map<Int, String> = mapOf(
-    0 to "AGUAS Y AZUFRE",
+    16 to "AGUAS Y AZUFRE",
     1 to "CHANCADO",
     2 to "LIXIVIACION",
     3 to "ADR",
@@ -27,7 +27,7 @@ val subAreaIds: Map<Int, String> = mapOf(
 
 val areaSubArea: Map<Int, List<Int>> = mapOf(
 
-    0 to listOf<Int>(0, 1, 2, 3, 4),
+    10 to listOf<Int>(16, 1, 2, 3, 4),
     1 to listOf<Int>(5),
     2 to listOf<Int>(6),
     3 to listOf<Int>(7),
