@@ -31,4 +31,4 @@ The app uses need an ApiRes that is a private repo, and was built in kotlin.
 
 If you see pictures of my cat, it's because I didn't know what other pictures to put, and well... I love my cat.
 
-<video src='https://user-images.githubusercontent.com/45445692/230266529-3474eb7a-b365-4845-bf2f-0f03a8f80d46.mp4' width=720></video>
+https://user-images.githubusercontent.com/45445692/230266529-3474eb7a-b365-4845-bf2f-0f03a8f80d46.mp4
